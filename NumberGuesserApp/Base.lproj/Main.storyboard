@@ -40,6 +40,9 @@
                                 <subviews>
                                     <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minimumValue="2" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="R4y-DN-Ezl">
                                         <rect key="frame" x="0.0" y="0.0" width="94" height="32"/>
+                                        <connections>
+                                            <action selector="rangeStepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="j6W-k6-ef7"/>
+                                        </connections>
                                     </stepper>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="0 - 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5SX-UH-asq">
                                         <rect key="frame" x="223" y="0.0" width="36.5" height="32"/>
@@ -60,6 +63,9 @@
                                 <subviews>
                                     <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="JpC-XN-rjA">
                                         <rect key="frame" x="0.0" y="0.0" width="94" height="32"/>
+                                        <connections>
+                                            <action selector="livesStepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="UVv-kI-qfT"/>
+                                        </connections>
                                     </stepper>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 ♥️" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BIT-jc-NAL">
                                         <rect key="frame" x="223" y="0.0" width="35" height="32"/>
@@ -80,6 +86,9 @@
                                 <subviews>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YVV-Sg-EXM">
                                         <rect key="frame" x="0.0" y="0.0" width="25" height="31"/>
+                                        <connections>
+                                            <action selector="hintSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="kaO-Qe-jIT"/>
+                                        </connections>
                                     </switch>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yes ☺️" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6H-4u-09U">
                                         <rect key="frame" x="182" y="0.0" width="80" height="31"/>
@@ -131,6 +140,14 @@
                             <constraint firstItem="5FH-za-QJg" firstAttribute="top" secondItem="5vK-tH-12f" secondAttribute="bottom" constant="7.5" id="z9R-ra-bn8"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="hintsDescriptionLabel" destination="PT2-oZ-J8k" id="pao-YD-wII"/>
+                        <outlet property="hintsLabel" destination="x6H-4u-09U" id="lBY-Gx-HYV"/>
+                        <outlet property="numberOfLives" destination="BIT-jc-NAL" id="mXU-Qv-aES"/>
+                        <outlet property="numberOfLivesDescriptionLabel" destination="5vK-tH-12f" id="MoY-iX-Uew"/>
+                        <outlet property="rangeDescriptionLabel" destination="iNZ-q9-sH2" id="Y84-XP-vQb"/>
+                        <outlet property="rangeLabel" destination="5SX-UH-asq" id="RkV-70-zbn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
