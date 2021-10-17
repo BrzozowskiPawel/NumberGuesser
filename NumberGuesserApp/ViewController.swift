@@ -28,7 +28,21 @@ class ViewController: UIViewController {
     }
 
     @IBAction func rangeStepper(_ sender: UIStepper) {
-        
+        if sender.value > 2 {
+            if sender.value < 100 {
+                rangeDescriptionLabel.text = "Choose a range of numbers."
+                rangeLabel.text = "0 - \(Int(sender.value).description)"
+                range = Int(sender.value)
+            }
+            else {
+                rangeDescriptionLabel.text = "Thats max. number 😳"
+                rangeLabel.text = "0 - \(Int(sender.value).description)"
+                range = Int(sender.value)
+            }
+        }
+        else {
+            rangeDescriptionLabel.text = "It cannot be lower 😢"
+        }
     }
     
     @IBAction func livesStepper(_ sender: UIStepper) {
@@ -52,6 +66,13 @@ class ViewController: UIViewController {
     }
     
     @IBAction func hintSwitch(_ sender: UISwitch) {
+        if sender.isOn {
+            hintsLabel.text = "Yes ☺️"
+            hints = true
+        } else {
+            hintsLabel.text = "No 😢"
+            hints = false
+        }
     }
     
     
