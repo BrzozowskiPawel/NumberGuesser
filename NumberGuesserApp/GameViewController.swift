@@ -11,8 +11,8 @@ class GameViewController: UIViewController {
 
     var receivedData = [String:Any]()
     
-    var lives: Int = 3
-    var range: Int = 10
+    var lives: Int = -1
+    var range: Int = -1
     var hints: Bool = true
     var randomNumber: Int = -1
     
@@ -38,7 +38,25 @@ class GameViewController: UIViewController {
         hints = receivedData["hints"] as! Bool
         randomNumber = Int.random(in: 1...range)
         
+        setLivesLabel()
+        setRangeLabel()
     }
 
-
+    func setLivesLabel() {
+        if lives >= 1 {
+            livesLabel.text = "\(lives)♥️"
+        } else {
+            livesLabel.text = "💔"
+        }
+    }
+    
+    func setHintsVisibility() {
+        if hints == false{
+            hintLabel.text = ""
+        }
+    }
+    
+    func setRangeLabel() {
+        rangeLabel.text = "0-\(range)"
+    }
 }
