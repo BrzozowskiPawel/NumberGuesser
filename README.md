@@ -14,6 +14,12 @@ A small application written with swift. It is a game of guessing the random numb
 
 - [UI description](#ui-description)
 
+- [Settings](#settings)
+
+- [Game Won](#game-won)
+
+- [Game Over](#game-over)
+
 - [Improvements](#improvements)
 
 ## Description
