@@ -15,6 +15,7 @@ class GameViewController: UIViewController {
     var range: Int = -1
     var hints: Bool = true
     var randomNumber: Int = -1
+    var userWon: Bool = false
     
     @IBOutlet weak var mainLabel: UILabel!
     @IBOutlet weak var subtextLabel: UILabel!
@@ -40,8 +41,44 @@ class GameViewController: UIViewController {
         
         setLivesLabel()
         setRangeLabel()
+        feedbackLabel.text = "Are you feeling lucky today?"
+        hintLabel.text = ""
     }
 
+    @IBAction func chechButton(_ sender: UIButton) {
+        if userWon == false {
+            let userGuess = Int(textField.text!)
+            print("Val. of rand_num = \(randomNumber)")
+            
+            if userGuess == randomNumber {
+                mainLabel.text = "YOU WON 🏆"
+                subtextLabel.text = "Congratulation for you"
+                feedbackLabel.text = "Your answer is right 👍"
+                feedbackLabel.textColor = .green
+                hintLabel.text = ""
+                userWon = true
+                
+                
+            } else {
+                lives = lives - 1
+                if lives < 1 {
+                    mainLabel.text = "GAME OVER 💩"
+                    subtextLabel.text = "Try again, meybe next time"
+                    setLivesLabel()
+                } else {
+                    setLivesLabel()
+                    feedbackLabel.text = "Your answer is wrong 😢"
+                    feedbackLabel.textColor = .red
+                    displayHint(playerNumber: userGuess!, randNumber: randomNumber)
+                }
+            }
+            textField.text = ""
+        } else {
+            textField.placeholder = "You have already won"
+        }
+        self.view.endEditing(true)
+    }
+    
     @IBAction func goBackButton(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
     }
@@ -64,4 +101,13 @@ class GameViewController: UIViewController {
     func setRangeLabel() {
         rangeLabel.text = "0-\(range)"
     }
+    
+    func displayHint(playerNumber: Int, randNumber: Int) {
+        if playerNumber > randNumber {
+            hintLabel.text = "Try lower number"
+        } else {
+            hintLabel.text = "Try higher number"
+        }
+    }
+    
 }
