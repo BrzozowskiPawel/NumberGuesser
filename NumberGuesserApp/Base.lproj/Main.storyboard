@@ -189,20 +189,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your answer is wrong 😕" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Fs-bY-kgW">
-                                <rect key="frame" x="112" y="245" width="190" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your answer is wrong 😕" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Fs-bY-kgW">
+                                <rect key="frame" x="102" y="245" width="210" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="210" id="Trl-NB-puz"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Try lower number" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6V-aX-eFH">
-                                <rect key="frame" x="140.5" y="274" width="133" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Try lower number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6V-aX-eFH">
+                                <rect key="frame" x="127" y="273.5" width="160" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="GZ2-WG-JA1"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type your guess" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EOj-T2-57o">
-                                <rect key="frame" x="127" y="340" width="160" height="50"/>
+                                <rect key="frame" x="127" y="339.5" width="160" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="IPC-Pc-0wf"/>
                                     <constraint firstAttribute="width" constant="160" id="Iau-la-KIM"/>
@@ -223,7 +229,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cuq-Of-9WC">
-                                <rect key="frame" x="159" y="398" width="96" height="70"/>
+                                <rect key="frame" x="159" y="397.5" width="96" height="70"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="eYx-7h-XHE"/>
@@ -253,7 +259,6 @@
                             <constraint firstItem="vDM-Fq-nyg" firstAttribute="centerX" secondItem="xGW-7k-pfO" secondAttribute="centerX" id="rz1-Hd-lct"/>
                             <constraint firstItem="dAC-Q0-LFy" firstAttribute="centerX" secondItem="xGW-7k-pfO" secondAttribute="centerX" id="sWz-eJ-px9"/>
                             <constraint firstItem="T0D-Gu-5Yb" firstAttribute="bottom" secondItem="Ma2-wD-1oh" secondAttribute="bottom" constant="30" id="uFl-sY-28J"/>
-                            <constraint firstItem="b6V-aX-eFH" firstAttribute="leading" secondItem="2Fs-bY-kgW" secondAttribute="trailing" constant="-161.5" id="uWK-HA-vht"/>
                             <constraint firstItem="dAC-Q0-LFy" firstAttribute="top" secondItem="T0D-Gu-5Yb" secondAttribute="top" constant="44" id="ut5-8u-h9f"/>
                             <constraint firstItem="6VD-P8-b7y" firstAttribute="top" secondItem="T0D-Gu-5Yb" secondAttribute="top" constant="48" id="xeF-Zt-Cp0"/>
                             <constraint firstItem="6VD-P8-b7y" firstAttribute="leading" secondItem="T0D-Gu-5Yb" secondAttribute="leading" constant="20" id="yga-4U-FOc"/>

@@ -56,8 +56,7 @@ class GameViewController: UIViewController {
                 feedbackLabel.text = "Your answer is right 👍"
                 feedbackLabel.textColor = .green
                 hintLabel.text = ""
-                userWon = true
-                
+                userWon = true 
                 
             } else {
                 lives = lives - 1
