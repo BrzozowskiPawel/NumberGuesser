@@ -108,6 +108,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Lets Play 🎲"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dw8-K9-xTG"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -147,18 +150,19 @@
                         <outlet property="numberOfLivesDescriptionLabel" destination="5vK-tH-12f" id="MoY-iX-Uew"/>
                         <outlet property="rangeDescriptionLabel" destination="iNZ-q9-sH2" id="Y84-XP-vQb"/>
                         <outlet property="rangeLabel" destination="5SX-UH-asq" id="RkV-70-zbn"/>
+                        <segue destination="u8G-2F-2ad" kind="show" identifier="segueToGame" id="VaA-dK-VrP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
         </scene>
-        <!--View Controller-->
+        <!--Game View Controller-->
         <scene sceneID="V9l-3T-Z2v">
             <objects>
-                <viewController id="u8G-2F-2ad" sceneMemberID="viewController">
+                <viewController id="u8G-2F-2ad" customClass="GameViewController" customModule="NumberGuesserApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xGW-7k-pfO">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lets play!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dAC-Q0-LFy">
@@ -228,6 +232,7 @@
                         <viewLayoutGuide key="safeArea" id="T0D-Gu-5Yb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="nbW-BF-kjN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lC7-0u-fYb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

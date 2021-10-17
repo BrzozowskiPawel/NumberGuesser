@@ -75,6 +75,21 @@ class ViewController: UIViewController {
         }
     }
     
+    var dataToSend = [String:Any]()
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destination = segue.destination as! GameViewController
+        destination.receivedData = sender as! [String:Any]
+    }
+    
+    @IBAction func buttonPressed(_ sender: UIButton) {
+        dataToSend = [
+            "range":range,
+            "lives":lives,
+            "hints":hints
+        ]
+        performSegue(withIdentifier: "segueToGame", sender: dataToSend)
+    }
     
 }
 
