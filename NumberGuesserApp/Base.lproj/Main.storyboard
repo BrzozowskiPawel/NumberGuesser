@@ -254,6 +254,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="nbW-BF-kjN"/>
+                    <connections>
+                        <outlet property="feedbackLabel" destination="2Fs-bY-kgW" id="cEe-Xm-VfN"/>
+                        <outlet property="hintLabel" destination="b6V-aX-eFH" id="sp9-j9-w3a"/>
+                        <outlet property="livesLabel" destination="6VD-P8-b7y" id="Aix-VS-fiu"/>
+                        <outlet property="mainLabel" destination="dAC-Q0-LFy" id="q8a-d7-i47"/>
+                        <outlet property="rangeLabel" destination="zi5-rn-Sre" id="ppa-73-z4T"/>
+                        <outlet property="subtextLabel" destination="vDM-Fq-nyg" id="EVC-hd-8IU"/>
+                        <outlet property="textField" destination="EOj-T2-57o" id="1Kw-X0-h5l"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lC7-0u-fYb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
