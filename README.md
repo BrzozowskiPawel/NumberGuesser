@@ -1,4 +1,4 @@
-# NumberGuesser
+# NumberGuesser 🧠
 A small application written with swift. It is a game of guessing the random number. </br> It has been created in such a way as to allow the user settings: 
 - the number range, 
 - the number of attempts to guess (lives),
