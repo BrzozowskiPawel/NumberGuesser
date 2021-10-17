@@ -47,7 +47,7 @@ The UI is divided into 2 parts:
 
 ## Settings ⚙️
 
-<img src="readme_files/Guesser_demo_HD.gif" alt="demo_gif" width="374"/> 
+<img src="readme_files/Guesser_settings_HD.gif" alt="demo_gif" width="374"/> 
 
 ## Game Won 🏆
 
