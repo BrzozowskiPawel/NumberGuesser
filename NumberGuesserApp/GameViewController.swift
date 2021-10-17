@@ -52,7 +52,7 @@ class GameViewController: UIViewController {
             
             if userGuess == randomNumber {
                 mainLabel.text = "YOU WON 🏆"
-                subtextLabel.text = "Congratulation for you"
+                subtextLabel.text = "Congratulation for you."
                 feedbackLabel.text = "Your answer is right 👍"
                 feedbackLabel.textColor = .green
                 hintLabel.text = ""
@@ -63,7 +63,7 @@ class GameViewController: UIViewController {
                 lives = lives - 1
                 if lives < 1 {
                     mainLabel.text = "GAME OVER 💩"
-                    subtextLabel.text = "Try again, meybe next time"
+                    subtextLabel.text = "Try again, meybe next time."
                     setLivesLabel()
                 } else {
                     setLivesLabel()
@@ -74,7 +74,7 @@ class GameViewController: UIViewController {
             }
             textField.text = ""
         } else {
-            textField.placeholder = "You have already won"
+            textField.placeholder = "You have already won!"
         }
         self.view.endEditing(true)
     }
@@ -104,9 +104,9 @@ class GameViewController: UIViewController {
     
     func displayHint(playerNumber: Int, randNumber: Int) {
         if playerNumber > randNumber {
-            hintLabel.text = "Try lower number"
+            hintLabel.text = "Try lower number."
         } else {
-            hintLabel.text = "Try higher number"
+            hintLabel.text = "Try higher number."
         }
     }
     
