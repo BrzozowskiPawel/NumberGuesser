@@ -82,16 +82,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="159" translatesAutoresizingMaskIntoConstraints="NO" id="KGj-1Q-0kc">
-                                <rect key="frame" x="76" y="562" width="262" height="31"/>
+                                <rect key="frame" x="62.5" y="562" width="289" height="31"/>
                                 <subviews>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YVV-Sg-EXM">
-                                        <rect key="frame" x="0.0" y="0.0" width="25" height="31"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="52" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="0A5-f4-Uxf"/>
+                                        </constraints>
                                         <connections>
                                             <action selector="hintSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="kaO-Qe-jIT"/>
                                         </connections>
                                     </switch>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yes ☺️" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6H-4u-09U">
-                                        <rect key="frame" x="182" y="0.0" width="80" height="31"/>
+                                        <rect key="frame" x="209" y="0.0" width="80" height="31"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="80" id="1mP-ee-sYN"/>
                                         </constraints>
@@ -126,7 +129,6 @@
                             <constraint firstItem="2SY-sd-Mcq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="NV7-fH-Q8B"/>
                             <constraint firstItem="iNZ-q9-sH2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ns8-yO-abk"/>
                             <constraint firstItem="biL-PU-IWt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Plh-0S-1Pr"/>
-                            <constraint firstItem="KGj-1Q-0kc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="WPO-lB-VWw"/>
                             <constraint firstItem="biL-PU-IWt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="13" id="XKH-Mb-ftD"/>
                             <constraint firstItem="KGj-1Q-0kc" firstAttribute="top" secondItem="PT2-oZ-J8k" secondAttribute="bottom" constant="7.5" id="Xuv-Ur-rlj"/>
                             <constraint firstItem="PT2-oZ-J8k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ap8-fB-0je"/>
