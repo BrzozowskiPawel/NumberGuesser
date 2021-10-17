@@ -227,6 +227,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Go back"/>
+                                <connections>
+                                    <action selector="goBackButton:" destination="u8G-2F-2ad" eventType="touchUpInside" id="bk4-ci-4s7"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="T0D-Gu-5Yb"/>

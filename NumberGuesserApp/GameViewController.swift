@@ -42,6 +42,11 @@ class GameViewController: UIViewController {
         setRangeLabel()
     }
 
+    @IBAction func goBackButton(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    
     func setLivesLabel() {
         if lives >= 1 {
             livesLabel.text = "\(lives)♥️"
